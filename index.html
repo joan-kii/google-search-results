@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .cabecera {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              padding: 15px;
+            }
+            .buscar {
+              display: flex;
+            }
+            .logo {
+              width: 92px;
+              height: auto;
+              padding-right: 5px;
+              margin-top: 6px;
+            }
+            #caja {
+              height: 35px;
+              width: 500px;
+              border-radius: 30px;
+              padding-inline-start: 20px;
+              margin: 3px 20px 20px 20px;
+              border: 1px solid #dfe1e5;
+            }
+            #caja:hover {
+              box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+            }
+            .sesion{
+              display: flex;
+            }
+            #boton_sesion {
+              display: flex;
+              background-color: #4285f4;
+              font-size: 12px;
+              border: 1px solid #fff;
+              color: #FFF;
+              font-family: arial, sans-serif;
+              text-decoration: none;
+              font-weight: bold;
+              cursor: default;
+              line-height: 28px;
+              border-radius: 3px;
+              padding: 7px 16px 7px 16px;
+            }
+            .navbar {
+              display: flex;
+              height: 22px;
+              color: #666;
+              font-size: 13px;
+              font-family: arial, sans-serif;
+              display: flex;
+              margin-left: 2px;
+              border-bottom: 1px solid #70757a60;
+            }
+            .link {
+              display: inline-block;
+              font-size: 13px;
+              padding-left: 13px;
+              padding-right: 3px;
+              text-decoration: none;
+              color: #000;
+              opacity: 0.75;
+              font-family: arial, sans-serif;
+            }
+            #result_total {
+              display: flex;
+              line-height: 43px;
+              position: absolute;
+              top: 110px;
+              margin-left:15px;
+              margin-bottom: 15px;
+              color: #70757a;
+              font-size: 14px;
+              font-family: arial, sans-serif;
+            }
+            .page {
+              display: flex;
+              justify-content: space-between;
+              position: absolute;
+              top: 185px;
+              height: 100px;
+              margin-left:15px;
+              margin-right: 150px;
+            }
+            .result {
+              display: flex;
+              flex-direction: column;
+              order: 1;
+              width: 100%;
+            }
+            .data {
+              display: flex;
+              order: 2;
+              margin-left: 70px;
+            }
+            cite {
+              font-size: 14px;
+              line-height: 1.3;
+              color: #5f6368;
+              font-style: normal;
+              font-family: arial, sans-serif;
+              margin-bottom: 3px;
+            }
+            .link_result {
+              font-size: 20px;
+              line-height: 1.3;
+              display: inline-block;
+              color: #1a0dab;
+              text-decoration: none;
+              font-family: arial, sans-serif;
+              font-weight: normal;
+              
+            }
+            .link_result:hover {
+              text-decoration: underline;
+            }
+            p {
+              font-family: arial, sans-serif;
+              font-size: 14px;
+              font-weight: normal;
+              color: #4d5156;
+              text-align: left;
+            }
+            h3 {
+              font-family: arial, sans-serif;
+              font-size: 20px;
+              font-weight: normal;
+              color: #222;
+              text-align: left;
+              line-height: 1.3;
+            }
+            img {
+              margin-bottom: 20px;
+            }
+            .box_result {
+              margin-bottom: 20px;
+            }
+            .footer1 {
+              position: absolute;
+              top: 1350px;
+              width: 100%;
+              background: #f2f2f2;
+              border-top: 1px solid #e4e4e4;
+              line-height: 20px;
+              font-size: 13px;
+              padding-left: 15px;
+              color: #000;
+              opacity: 0.75;
+              font-family: arial, sans-serif;
+              }
+            .footer2 {
+              position: absolute;
+              top: 1400px;
+              width: 100%;
+              background: #f2f2f2;
+              border-top: 1px solid #e4e4e4;
+              line-height: 50px;
+              }
+        </style>
+    </head>
+    <title>
+        La versión fake de la página de resultados de Google.
+    </title>
+    <body>
+        <div class="cabecera">
+            <form class="buscar">
+              <div>
+                <a aria-expanded="false" role="button" href="https://www.google.com/webhp?hl=es&sa=X&ved=0ahUKEwidjtn78oLqAhU-A2MBHY8RC6MQPAgH"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" class="logo" alt="logo de google"></a>
+              </div>
+              <div>
+                <input id="caja" type="text">
+              </div>
+            </form>
+            <div class="sesion">
+             <div>
+               <a href="https://accounts.google.com/ServiceLogin?hl=es&amp;passive=true&amp;continue=https://www.google.com/" id="boton_sesion">Iniciar Sesión</a>
+             </div>
+           </div>
+        </div>
+        <div class="navbar">
+          <div>
+            <a class="link" href="https://www.google.com/search?client=ubuntu&channel=fs&q=ignatius+farray&ie=utf-8&oe=utf-8">Todo</a>
+          </div>
+          <div>
+            <a class="link" href="https://www.google.com/search?q=ignatius+farray&client=ubuntu&hs=4sQ&channel=fs&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjA4b-JkoPqAhWD8eAKHXSzAoMQ_AUoAXoECBUQAw">Imágenes</a>
+          </div>
+          <div>
+            <a class="link" href="https://www.google.com/search?q=ignatius+farray&client=ubuntu&hs=4sQ&channel=fs&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjA4b-JkoPqAhWD8eAKHXSzAoMQ_AUoAXoECBUQAw">Noticias</a>
+          </div>
+          <div>
+            <a class="link" href="https://www.google.com/search?q=ignatius+farray&client=ubuntu&hs=4sQ&channel=fs&source=lnms&tbm=vid&sa=X&ved=2ahUKEwjA4b-JkoPqAhWD8eAKHXSzAoMQ_AUoA3oECBUQBQ">Vídeos</a>
+          </div>
+          <div>
+            <a class="link" href="https://www.google.com/search?q=ignatius+farray&client=ubuntu&hs=4sQ&channel=fs&source=lnms&tbm=shop&sa=X&ved=2ahUKEwjA4b-JkoPqAhWD8eAKHXSzAoMQ_AUoBHoECBUQBg">Shopping</a>
+          </div>
+          <div>
+            <a class="link" href="#">Más</a>
+          </div>
+          <div>
+            <a class="link" href="#">Configuración</a>
+          </div>
+          <div>
+            <a class="link" href="#">Herramientas</a>
+          </div>
+        </div>
+        <div>
+          <p id="result_total">
+          Aproximadamente 389.000 resultados  (0,33 segundos) 
+          </p>
+        </div>
+        <div class="page">
+          <div class="result">
+            <div class="box_result">
+              <cite>es.wikipedia.org<span> › wiki › Ignatius_Farray</span></cite>
+            <a class="link_result" href="https://es.wikipedia.org/wiki/Ignatius_Farray">Ignatius Farray - Wikipedia, la enciclopedia libre</a>
+            <p>
+             Juan Ignacio Delgado Alemany (Granadilla de Abona, Tenerife, 2 de diciembre de 1973), más conocido como <b>Ignatius Farray</b>, es un cómico, monologuista, ...
+            </p>
+            </div>
+            <h3>
+              Vídeos
+            </h3>
+            <a href="https://www.youtube.com/channel/UC6lJZ9Ctx1vcmRY9cFEPyww"><img src="https://github.com/joan-kii/google-search-results/blob/master/videos-ignatius.png?raw=true"></a>
+            <div class="box_result">
+              <cite>www.mpcmanagement.es<span> › artistas › ignatius-farray</span></cite><br>
+              <a class="link_result" href="https://www.mpcmanagement.es/artistas/ignatius-farray/">Ignatius Farray - MPC Management - Contratación Oficial</a>
+              <p>
+                <b>Ignatius Farray</b> - Contratación - Un cómico muy poco convencional, se encuentra de gira por las distintas ... 
+              </p>
+          </div>
+            <div class="box_result">
+              <cite>www.elespanol.com<span> › Corazón › Televisión</span></cite><br>
+              <a class="link_result" href="#">La enfermedad de Ignatius Farray que no es para tomarse a ...</a>
+              <p>
+                 <b>Ignatius Farray</b> sufre una miocardiopatía hipertrófica. Sin embargo, y a pesar de participar en proyectos tan notables como Muchachada Nui, ... 
+              </p>
+            </div>
+            <div class="box_result">
+              <cite>www.elespanol.com<span> › Corazón › Televisión</span></cite><br>
+              <a class="link_result" href="#">Ignatius Farray - Últimas noticias de Ignatius Farray en ...</a>
+              <p>
+                El espectáculo en vivo de La Vida Moderna, protagonizado por David Broncano, Quequé e <b>Ignatius Farray</b>, llegará por primera vez a la Comunidad foral el ... 
+              </p>
+            </div>
+            <div class="box_result">
+              <cite >kuverproducciones.com<span> › portfolios › ignatiusfarray</span></cite><br>
+              <a class="link_result" href="#">IGNATIUS FARRAY - Kuver Producciones - Todo en eventos ...</a>
+              <p>
+                <b>IGNATIUS FARRAY</b>. Uno de los cómicos del momento, creador del «grito sordo ...
+              </p>
+            </div>
+            <div class="box_result">
+              <cite>www.elplural.com<span> › Comunicación</span></cite><br>
+              <a class="link_result" href="#">Ignatius Farray pierde el pulso con el 'trolleo máximo' - El Plural</a>
+              <p>
+                Los presentadores del programa 'La Vida Moderna', Quequé, <b>Ignatius Farray</b> y David Broncano.
+              </p>
+            </div>
+            <p>
+               Es posible que algunos resultados se hayan eliminado de acuerdo con la ley de protección de datos europea. 
+            </p>
+            <h3>
+             Búsquedas relacionadas con ignatius farray
+            </h3>
+          </div>
+          <div class="data">
+            <a href="https://es.wikipedia.org/wiki/Ignatius_Farray"><img src="https://github.com/joan-kii/google-search-results/blob/master/data-ignatius.png?raw=true"></a>
+          </div>
+      </div>
+      <footer>
+        <div class="footer1">
+          <p>
+            España
+          </p>
+        </div>
+        <div class="footer2">
+          <div>
+            <div>
+              <a href="https://policies.google.com/privacy?fg=1" class="link">Privacidad</a>
+              <a href="https://policies.google.com/terms?fg=1" class="link">Términos</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </body>
+</html> 
