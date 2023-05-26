@@ -1,4 +1,6 @@
-En este ejerciocio trata de simular las serap de Google para las keywords
-"ignatius farray".
+## Overview
+This is an exercise for The Odin Project's JavaScript path thet emulates the google serps for the keywords "ignatius farray".
 
-El objetivo solo es praticar un poco de CSS y HTML.
+## Built with
+  - HTML
+  - CSS
